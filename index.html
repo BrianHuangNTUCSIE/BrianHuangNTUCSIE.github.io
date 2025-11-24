@@ -1,150 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pang-Wei Huang – CV</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pang-Wei Huang - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 40px;
-        background: #f8f8f8;
-        color: #222;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 900px;
-        margin: auto;
-        padding: 40px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
-      h1 {
-        margin-bottom: 5px;
-        font-size: 32px;
-      }
-      h2 {
-        margin-top: 40px;
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 4px;
-        font-size: 22px;
-      }
-      .section-title {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      .section-title a {
-        font-size: 14px;
-        color: #0077cc;
-        text-decoration: none;
-      }
-      .section-title a:hover {
-        text-decoration: underline;
-      }
-      ul {
-        margin-top: 8px;
-      }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        }
+        h1, h2, h3 {
+            color: #00bcd4;
+        }
+        h1 {
+            margin-bottom: 0;
+        }
+        h2 {
+            border-bottom: 2px solid #00bcd4;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .contact-info p {
+            margin: 2px 0;
+        }
+        .small-note {
+            font-size: 0.9em;
+            color: #aaa;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <h1>Pang-Wei Huang</h1>
-      <p>
-        <b>Address:</b> 8 F., No. 147, Ln. 89, Guangfu Rd. Sec. 1, East Dist., Hsinchu City 300050, Taiwan<br />
-        <b>Tel:</b> +886-933-822-236<br />
-        <b>Email:</b> BrianHuang2003@icloud.com
-      </p>
+        <!-- Header -->
+        <h1>Pang-Wei Huang</h1>
+        <div class="contact-info">
+            <p><strong>Address:</strong> 8 F., No. 147, Ln. 89, Guangfu Rd. Sec. 1, East Dist., Hsinchu City 300050, Taiwan</p>
+            <p><strong>Phone:</strong> +886-933-822-236</p>
+            <p><strong>Email:</strong> <a href="mailto:BrianHuang2003@icloud.com">BrianHuang2003@icloud.com</a></p>
+            <p><strong>Personal webpage:</strong> <a href="https://brianhuangntucsie.github.io">https://brianhuangntucsie.github.io</a></p>
+            <p class="small-note">Note: If hyperlinks are disabled, please check my personal webpage for all links.</p>
+        </div>
 
-      <h2>Education</h2>
-      <p>
-        <b>National Taiwan University (NTU)</b> — GPA (last 60): 3.85/4.3<br />
-        Bachelor of Science, June 2025 — TOEFL iBT: 104; GRE: 329 (Q170; V159)<br />
-        Major: Computer Science and Information Engineering (CSIE)
-      </p>
+        <!-- Education -->
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>B.S. in Computer Science and Information Engineering (CSIE)</strong>, National Taiwan University (NTU) – June 2025</p>
+            <ul>
+                <li>GPA (last 60): 3.85/4.3</li>
+                <li>TOEFL iBT: 104; GRE: 329 (Q170; V159)</li>
+            </ul>
+        </div>
 
-      <h2>Research / Project Experience</h2>
-      <div class="section-title">
-        <b>Red-Teaming LLMs for Special Research</b>
-        <a href="#">(poster link)</a>
-      </div>
-      <p>Supervised by Prof. Yun-Nung Chen, Feb. 2025–June 2025</p>
-      <ul>
-        <li>Evaluated leading LLMs for robustness against jailbreaking attempts</li>
-        <li>Implemented a  Implemented a safety-checking agent improving defense success by 40 percentage points</li>
-        <li>Developed a demo validating architecture efficiency</li>
-      </ul>
+        <!-- Research / Project Experience -->
+        <div class="section">
+            <h2>Research / Project Experience</h2>
 
-      <div class="section-title">
-        <b>Retrieval-Augmented Generation for Special Research</b>
-        <a href="#">(poster link)</a>
-      </div>
-      <p>Supervised by Prof. Yun-Nung Chen, Feb. 2024–June 2024</p>
-      <ul>
-        <li>Evaluated LLaMA’s understanding of Taiwanese Mandarin and improved performance via RAG</li>
-        <li>Built chatbot for NTU course & campus info (98% correctness vs. 31% baseline)</li>
-      </ul>
+            <h3>Red-Teaming LLMs for Special Research (Feb. 2025 – Jun. 2025)</h3>
+            <p><a href="https://www.canva.com/design/DAGpSonr3iI/Q8vBc7pFRhjc2oj4r6rdMA/view?utm_content=DAGpSonr3iI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha6f57c7668">Poster link</a></p>
+            <ul>
+                <li>Supervised by Prof. Yun-Nung Chen</li>
+                <li>Evaluated leading large language models (e.g., GPT-4, LLaMA) for robustness against jailbreaking attempts</li>
+                <li>Implemented a safety-checking agent that improved the defense success rate by 40 percentage points</li>
+                <li>Developed a demo validating the effectiveness and efficiency of the proposed architecture</li>
+            </ul>
 
-      <div class="section-title">
-        <b>Reproducibility & Technical Implementation for Personal Communication Service</b>
-        <a href="https://github.com/BrianHuangNTUCSIE/PCS_Final.git">(github link)</a>
-      </div>
-      <p>Supervised by Prof. Phone Lin, Jan. 2024</p>
-      <ul>
-        <li>Reproduced IEEE TWC paper experiments with high fidelity</li>
-        <li>Implemented high-performance C/C++ code and Python analysis/visualization scripts</li>
-      </ul>
+            <h3>Retrieval-Augmented Generation for Special Research (Feb. 2024 – Jun. 2024)</h3>
+            <p><a href="https://www.canva.com/design/DAGH1eeGj_Y/GKG1HMM60hHASaZ1iq6xsQ/edit?utm_content=DAGH1eeGj_Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Poster link</a></p>
+            <ul>
+                <li>Supervised by Prof. Yun-Nung Chen</li>
+                <li>Evaluated LLaMA’s understanding of Taiwanese Mandarin and enhanced performance with retrieval-augmented generation</li>
+                <li>Built a chatbot to answer questions about NTU courses, announcements, and campus activities, achieving <strong>98% correctness</strong> (vs. <strong>31% baseline</strong> without RAG)</li>
+            </ul>
 
-      <div class="section-title">
-        <b>Intelligent Chatbot-Enhanced Forum for Computer Network Lab</b>
-        <a href="https://youtu.be/zLtaN_UOe-c">(demo link)</a>
-      </div>
-      <p>Supervised by Prof. Phone Lin, Feb. 2024–June 2024</p>
-      <ul>
-        <li>Led a 6-member team to build AI-enhanced online forum</li>
-        <li>Deployed Docker-based forum on department workstation</li>
-        <li>Integrated LLaMA-based chatbot plugin</li>
-      </ul>
+            <h3>Reproducibility and Technical Implementation for Personal Communication Service (Jan. 2024)</h3>
+            <p><a href="https://github.com/BrianHuangNTUCSIE/PCS_Final.git">GitHub link</a></p>
+            <ul>
+                <li>Supervised by Prof. Phone Lin</li>
+                <li>Reproduced experiments from an IEEE Transactions on Wireless Communications paper with high fidelity</li>
+                <li>Implemented high-performance code in C/C++ and created Python analysis scripts</li>
+            </ul>
 
-      <h2>Work Experience</h2>
-      <div class="section-title">
-        <b>Web Developer, 10 Years</b>
-        <a href="https://10years.tw/">(website link)</a>
-      </div>
-      <p>June 2025–present</p>
-      <ul>
-        <li>Built responsive WordPress website on limited budget</li>
-        <li>Configured SSL auto-renewal and improved search ranking</li>
-      </ul>
+            <h3>Intelligent Chatbot-Enhanced Forum for Computer Network Laboratory (Feb. 2024 – Jun. 2024)</h3>
+            <p><a href="https://youtu.be/zLtaN_UOe-c">Demo link</a></p>
+            <ul>
+                <li>Supervised by Prof. Phone Lin</li>
+                <li>Led a 6-member team to develop an AI-enhanced online forum for the final project</li>
+                <li>Deployed an open-source forum using Docker on the department workstation</li>
+                <li>Integrated an LLaMA-based chatbot as a forum plugin for AI-enhanced user interactions</li>
+            </ul>
+        </div>
 
-      <p><b>Assistant Engineer, R&D Dept., Alifecom Technology</b> — Aug. 2025–July 2026</p>
-      <ul>
-        <li>Developed GUI to automate PCB inspections (20+ min → under 3 min)</li>
-        <li>Integrated eSIM functionality into NE-7500 5G GUI</li>
-      </ul>
+        <!-- Work Experience -->
+        <div class="section">
+            <h2>Work Experience</h2>
 
-      <h2>Honors & Awards</h2>
-      <p><b>Presenter, Undergraduate Project Exhibition, NTU CSIE (2024, 2025)</b></p>
-      <ul>
-        <li>Nominated by Prof. Yun-Nung Chen</li>
-        <li>Presented to faculty, students, and industry guests</li>
-      </ul>
+            <h3>Web Developer, 10 Years (Small-Scale Enterprise) – Jun. 2025 – Present</h3>
+            <p><a href="https://10years.tw/">Website link</a></p>
+            <ul>
+                <li>Developed a responsive WordPress website for a local business, enhancing online visibility and streamlining customer inquiries under a tight budget</li>
+                <li>Configured Let’s Encrypt SSL certificate with auto-renewal, enabling HTTPS support and improving search engine ranking</li>
+            </ul>
 
-      <h2>Activities</h2>
-      <p><b>Referee (Volunteer), NTU Foreign Language Dept. Badminton Tournament</b>, Mar. 2024</p>
-      <ul>
-        <li>Officiated matches and handled disputes</li>
-        <li>Ensured tournament flow and scheduling</li>
-      </ul>
+            <h3>Assistant Engineer, R&D Department, Alifecom Technology – Aug. 2025 – Jul. 2026</h3>
+            <ul>
+                <li>Engineered a user-friendly GUI to fully automate PCB inspections, reducing per-board inspection time from <strong>20+ minutes</strong> to <strong>under 3 minutes</strong></li>
+                <li>Integrated eSIM functionality into the existing GUI of the NE-7500 5G product</li>
+            </ul>
+        </div>
 
-      <h2>Skills</h2>
-      <p>
-        <b>Languages:</b> Mandarin (native), English (proficient)<br />
-        <b>Programming & Tools:</b> Python, C/C++, WPF (XAML & C#), PyTorch, Docker, Linux, WordPress<br />
-        <b>Professional Areas:</b> NLP, network administration, web programming
-      </p>
+        <!-- Honors & Awards -->
+        <div class="section">
+            <h2>Honors & Awards</h2>
+            <h3>Presenter, Undergraduate Project Exhibition, Dept. of CSIE, NTU – Jun. 2024, Jun. 2025</h3>
+            <ul>
+                <li>Nominated by Prof. Yun-Nung Chen to participate in the exhibition</li>
+                <li>Presented projects to faculty, peers, and industry guests, receiving positive feedback</li>
+            </ul>
+        </div>
+
+        <!-- Activities -->
+        <div class="section">
+            <h2>Activities</h2>
+            <h3>Referee (Volunteer), Foreign Language Department Badminton Tournament, NTU – Mar. 2024</h3>
+            <ul>
+                <li>Officiated matches, enforcing rules and resolving disputes in a fair and timely manner</li>
+                <li>Collaborated with event staff to ensure smooth tournament operations and time management</li>
+            </ul>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Mandarin (native), English (proficient)</li>
+                <li><strong>Programming & Tools:</strong> Python, C/C++, WPF (XAML & C#), PyTorch, Docker, Linux, WordPress</li>
+                <li><strong>Professional Areas:</strong> Natural Language Processing (NLP), network administration, web programming</li>
+            </ul>
+        </div>
     </div>
-  </body>
+</body>
 </html>

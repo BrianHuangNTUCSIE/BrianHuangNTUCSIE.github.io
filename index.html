@@ -1,167 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pang-Wei Huang - CV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pang-Wei Huang - CV</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background: #f0f2f5;
+        color: #333;
+        display: flex;
+        min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 250px;
+        background: #0d6efd;
+        color: #fff;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    }
+
+    .sidebar h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .sidebar h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: #dbe5ff;
+    }
+
+    .sidebar a {
+        color: #fff;
+        text-decoration: none;
+        margin: 8px 0;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+    }
+
+    .sidebar a i {
+        margin-right: 10px;
+    }
+
+    .sidebar a:hover {
+        color: #ffc107;
+    }
+
+    /* Main content */
+    .main {
+        flex: 1;
+        padding: 40px;
+    }
+
+    .section {
+        margin-bottom: 40px;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+        color: #0d6efd;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #0d6efd;
+        display: inline-block;
+        padding-bottom: 3px;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-3px);
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        color: #0d6efd;
+    }
+
+    .card a {
+        color: #0d6efd;
+        text-decoration: none;
+    }
+
+    .card ul {
+        list-style: disc inside;
+    }
+
+    .card ul li {
+        margin-bottom: 6px;
+    }
+
+    .contact p, .contact a {
+        color: #fff;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
         body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #e0e0e0;
-            line-height: 1.6;
+            flex-direction: column;
         }
-        .container {
-            max-width: 900px;
-            margin: auto;
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        .main {
             padding: 20px;
-            background-color: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.6);
         }
-        h1, h2, h3 {
-            color: #00bcd4;
-        }
-        h1 {
-            margin-bottom: 0;
-        }
-        h2 {
-            border-bottom: 2px solid #00bcd4;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        a {
-            color: #00bcd4;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 25px;
-        }
-        .contact-info p {
-            margin: 2px 0;
-        }
-        .small-note {
-            font-size: 0.9em;
-            color: #aaa;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
+
+    <div class="sidebar">
         <h1>Pang-Wei Huang</h1>
-        <div class="contact-info">
-            <p><strong>Address:</strong> 8 F., No. 147, Ln. 89, Guangfu Rd. Sec. 1, East Dist., Hsinchu City 300050, Taiwan</p>
-            <p><strong>Phone:</strong> +886-933-822-236</p>
-            <p><strong>Email:</strong> <a href="mailto:BrianHuang2003@icloud.com">BrianHuang2003@icloud.com</a></p>
-            <p><strong>Personal webpage:</strong> <a href="https://brianhuangntucsie.github.io">https://brianhuangntucsie.github.io</a></p>
+        <h2>Computer Science | Web & AI Developer</h2>
+        <div class="contact">
+            <p><i class="fa-solid fa-phone"></i> +886-933-822-236</p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:BrianHuang2003@icloud.com">BrianHuang2003@icloud.com</a></p>
+            <p><i class="fa-solid fa-globe"></i> <a href="https://brianhuangntucsie.github.io" target="_blank">Personal Website</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/BrianHuangNTUCSIE" target="_blank">GitHub</a></p>
         </div>
+        <nav>
+            <a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+            <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+            <a href="#projects"><i class="fa-solid fa-flask"></i> Projects</a>
+            <a href="#work"><i class="fa-solid fa-briefcase"></i> Work</a>
+            <a href="#awards"><i class="fa-solid fa-trophy"></i> Awards</a>
+            <a href="#activities"><i class="fa-solid fa-volleyball"></i> Activities</a>
+        </nav>
+    </div>
 
+    <div class="main">
         <!-- Education -->
-        <div class="section">
+        <div class="section" id="education">
             <h2>Education</h2>
-            <p><strong>B.S. in Computer Science and Information Engineering (CSIE)</strong>, National Taiwan University (NTU) – June 2025</p>
-            <ul>
-                <li>GPA (last 60): 3.85/4.3</li>
-                <li>TOEFL iBT: 104; GRE: 329 (Q170; V159)</li>
-            </ul>
-        </div>
-
-        <!-- Research / Project Experience -->
-        <div class="section">
-            <h2>Research / Project Experience</h2>
-
-            <h3>Red-Teaming LLMs for Special Research (Feb. 2025 – Jun. 2025)</h3>
-            <p><a href="https://www.canva.com/design/DAGpSonr3iI/Q8vBc7pFRhjc2oj4r6rdMA/view?utm_content=DAGpSonr3iI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha6f57c7668">Poster link</a></p>
-            <ul>
-                <li>Supervised by Prof. Yun-Nung Chen</li>
-                <li>Evaluated leading large language models (e.g., GPT-4, LLaMA) for robustness against jailbreaking attempts</li>
-                <li>Implemented a safety-checking agent that improved the defense success rate by 40 percentage points</li>
-                <li>Developed a demo validating the effectiveness and efficiency of the proposed architecture</li>
-            </ul>
-
-            <h3>Retrieval-Augmented Generation for Special Research (Feb. 2024 – Jun. 2024)</h3>
-            <p><a href="https://www.canva.com/design/DAGH1eeGj_Y/GKG1HMM60hHASaZ1iq6xsQ/edit?utm_content=DAGH1eeGj_Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Poster link</a></p>
-            <ul>
-                <li>Supervised by Prof. Yun-Nung Chen</li>
-                <li>Evaluated LLaMA’s understanding of Taiwanese Mandarin and enhanced performance with retrieval-augmented generation</li>
-                <li>Built a chatbot to answer questions about NTU courses, announcements, and campus activities, achieving <strong>98% correctness</strong> (vs. <strong>31% baseline</strong> without RAG)</li>
-            </ul>
-
-            <h3>Reproducibility and Technical Implementation for Personal Communication Service (Jan. 2024)</h3>
-            <p><a href="https://github.com/BrianHuangNTUCSIE/PCS_Final.git">GitHub link</a></p>
-            <ul>
-                <li>Supervised by Prof. Phone Lin</li>
-                <li>Reproduced experiments from an IEEE Transactions on Wireless Communications paper with high fidelity</li>
-                <li>Implemented high-performance code in C/C++ and created Python analysis scripts</li>
-            </ul>
-
-            <h3>Intelligent Chatbot-Enhanced Forum for Computer Network Laboratory (Feb. 2024 – Jun. 2024)</h3>
-            <p><a href="https://youtu.be/zLtaN_UOe-c">Demo link</a></p>
-            <ul>
-                <li>Supervised by Prof. Phone Lin</li>
-                <li>Led a 6-member team to develop an AI-enhanced online forum for the final project</li>
-                <li>Deployed an open-source forum using Docker on the department workstation</li>
-                <li>Integrated an LLaMA-based chatbot as a forum plugin for AI-enhanced user interactions</li>
-            </ul>
-        </div>
-
-        <!-- Work Experience -->
-        <div class="section">
-            <h2>Work Experience</h2>
-
-            <h3>Web Developer, 10 Years (Small-Scale Enterprise) – Jun. 2025 – Present</h3>
-            <p><a href="https://10years.tw/">Website link</a></p>
-            <ul>
-                <li>Developed a responsive WordPress website for a local business, enhancing online visibility and streamlining customer inquiries under a tight budget</li>
-                <li>Configured Let’s Encrypt SSL certificate with auto-renewal, enabling HTTPS support and improving search engine ranking</li>
-            </ul>
-
-            <h3>Assistant Engineer, R&D Department, Alifecom Technology – Aug. 2025 – Jul. 2026</h3>
-            <ul>
-                <li>Engineered a user-friendly GUI to fully automate PCB inspections, reducing per-board inspection time from <strong>20+ minutes</strong> to <strong>under 3 minutes</strong></li>
-                <li>Integrated eSIM functionality into the existing GUI of the NE-7500 5G product</li>
-            </ul>
-        </div>
-
-        <!-- Honors & Awards -->
-        <div class="section">
-            <h2>Honors & Awards</h2>
-            <h3>Presenter, Undergraduate Project Exhibition, Dept. of CSIE, NTU – Jun. 2024, Jun. 2025</h3>
-            <ul>
-                <li>Nominated by Prof. Yun-Nung Chen to participate in the exhibition</li>
-                <li>Presented projects to faculty, peers, and industry guests, receiving positive feedback</li>
-            </ul>
-        </div>
-
-        <!-- Activities -->
-        <div class="section">
-            <h2>Activities</h2>
-            <h3>Referee (Volunteer), Foreign Language Department Badminton Tournament, NTU – Mar. 2024</h3>
-            <ul>
-                <li>Officiated matches, enforcing rules and resolving disputes in a fair and timely manner</li>
-                <li>Collaborated with event staff to ensure smooth tournament operations and time management</li>
-            </ul>
+            <div class="card">
+                <h3>National Taiwan University (NTU)</h3>
+                <p>B.S. in Computer Science and Information Engineering (CSIE), June 2025</p>
+                <p><strong>GPA (last 60): 3.85/4.3</strong></p>
+                <p>TOEFL iBT: 104; GRE: 329 (Q170; V159)</p>
+            </div>
         </div>
 
         <!-- Skills -->
-        <div class="section">
+        <div class="section" id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> Mandarin (native), English (proficient)</li>
-                <li><strong>Programming & Tools:</strong> Python, C/C++, WPF (XAML & C#), PyTorch, Docker, Linux, WordPress</li>
-                <li><strong>Professional Areas:</strong> Natural Language Processing (NLP), network administration, web programming</li>
-            </ul>
+            <div class="card">
+                <p><strong>Languages:</strong> Mandarin (native), English (proficient)</p>
+                <p><strong>Programming & Tools:</strong> Python, C/C++, WPF (XAML & C#), PyTorch, Docker, Linux, WordPress</p>
+                <p><strong>Professional Areas:</strong> NLP, network administration, web programming</p>
+            </div>
         </div>
+
+        <!-- Projects -->
+        <div class="section" id="projects">
+            <h2>Research & Projects</h2>
+
+            <div class="card">
+                <h3>Red-Teaming LLMs for Special Research <a href="https://www.canva.com/design/DAGpSonr3iI/Q8vBc7pFRhjc2oj4r6rdMA/view?utm_content=DAGpSonr3iI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha6f57c7668" target="_blank"><i class="fa-solid fa-file"></i></a></h3>
+                <ul>
+                    <li>Supervised by Prof. Yun-Nung Chen</li>
+                    <li>Evaluated leading LLMs (GPT-4, LLaMA) for robustness against jailbreaking</li>
+                    <li>Implemented safety-checking agent improving defense success by 40 percentage points</li>
+                    <li>Developed demo validating architecture effectiveness and efficiency</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Retrieval-Augmented Generation for Special Research <a href="https://www.canva.com/design/DAGH1eeGj_Y/GKG1HMM60hHASaZ1iq6xsQ/edit?utm_content=DAGH1eeGj_Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><i class="fa-solid fa-file"></i></a></h3>
+                <ul>
+                    <li>Enhanced LLaMA’s understanding of Taiwanese Mandarin via retrieval-augmented generation</li>
+                    <li>Built chatbot answering NTU course and campus activity queries (98% correctness vs 31% baseline)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Reproducibility and Technical Implementation for Personal Communication Service <a href="https://github.com/BrianHuangNTUCSIE/PCS_Final.git" target="_blank"><i class="fab fa-github"></i></a></h3>
+                <ul>
+                    <li>Reproduced IEEE Transactions on Wireless Communications experiments with high fidelity</li>
+                    <li>Implemented high-performance C/C++ code and Python scripts</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Intelligent Chatbot-Enhanced Forum for Computer Network Laboratory <a href="https://youtu.be/zLtaN_UOe-c?si=1VQOzgQgYaiXs-Zx" target="_blank"><i class="fab fa-youtube"></i></a></h3>
+                <ul>
+                    <li>Led 6-member team to develop AI-enhanced online forum</li>
+                    <li>Deployed Docker-based forum on department workstation</li>
+                    <li>Integrated LLaMA-based chatbot for AI-enhanced interactions</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Work -->
+        <div class="section" id="work">
+            <h2>Work Experience</h2>
+            <div class="card">
+                <h3>Web Developer, 10 Years (Small-Scale Enterprise) <a href="https://10years.tw/" target="_blank"><i class="fa-solid fa-globe"></i></a></h3>
+                <ul>
+                    <li>Developed responsive WordPress website, improving online visibility and customer inquiries</li>
+                    <li>Configured Let’s Encrypt SSL certificate with auto-renewal, enabling HTTPS</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Assistant Engineer, R&D Department, Alifecom Technology</h3>
+                <ul>
+                    <li>Built user-friendly GUI for fully automated PCB inspections (20+ min → under 3 min)</li>
+                    <li>Integrated eSIM functionality into NE-7500 5G product GUI</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Awards -->
+        <div class="section" id="awards">
+            <h2>Honors & Awards</h2>
+            <div class="card">
+                <h3>Presenter, Undergraduate Project Exhibition, Dept. of CSIE, NTU</h3>
+                <ul>
+                    <li>Nominated by Prof. Yun-Nung Chen to participate in exhibition</li>
+                    <li>Presented projects to faculty, peers, and industry guests, receiving positive feedback</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Activities -->
+        <div class="section" id="activities">
+            <h2>Activities</h2>
+            <div class="card">
+                <h3>Referee (Volunteer), Foreign Language Department Badminton Tournament, NTU</h3>
+                <ul>
+                    <li>Officiated matches and resolved disputes fairly and timely</li>
+                    <li>Collaborated with staff to ensure smooth tournament operations</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
+
 </body>
 </html>
